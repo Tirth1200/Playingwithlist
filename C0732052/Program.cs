@@ -15,6 +15,16 @@ namespace C0732052
             StudentInformation Mark = new StudentInformation("Mark", 0.2, 3);
             StudentInformation Steven = new StudentInformation("Steven", 2.9, 10);
             StudentInformation Cindy = new StudentInformation("Cindy", 3.8, 20);
+            var StudentList = new List<StudentInformation>();
+            StudentList.Add(Mary);
+            StudentList.Add(John);
+            StudentList.Add(Mark);
+            StudentList.Add(Steven);
+            StudentList.Add(Cindy);
+            foreach(var student in StudentList)
+            {
+                Console.WriteLine(student.Name);
+            }
         }
     }
     class StudentInformation
